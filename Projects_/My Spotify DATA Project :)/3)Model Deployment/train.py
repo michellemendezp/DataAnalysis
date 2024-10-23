@@ -12,7 +12,7 @@ def load_processed_data(path: str) -> pd.DataFrame:
 
 if __name__ == "__main__":
     # Load the preprocessed data
-    df = load_processed_data("/Users/michellemendez/Desktop/MICHELLE-WS/DataAnalysis/Projects_/Spotify Analysis/processed_spotify_data.csv")
+    df = load_processed_data("processed_spotify_data.csv")
     X = df.drop(columns=['label'])  # Adjust if 'label' is your target column
     y = df['label']
 

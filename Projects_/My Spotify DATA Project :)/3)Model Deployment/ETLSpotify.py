@@ -40,7 +40,7 @@ def preprocess_data(df: pd.DataFrame) -> pd.DataFrame:
 
 if __name__ == "__main__":
     # Define path and filename
-    path = "/Users/michellemendez/Desktop/MICHELLE-WS/DataAnalysis/Projects_/Spotify Analysis/"
+    path = "DataAnalysis/Projects_/Spotify Analysis/"
     filename = "data_playlist.csv"  # Replace with your actual filename
     
     # Load and preprocess the data

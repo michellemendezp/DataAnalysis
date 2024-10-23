@@ -47,7 +47,7 @@ def evaluate_model(model, X_test: np.ndarray, y_test: pd.Series):
 
 if __name__ == "__main__":
     # Path to the dataset
-    path = "/Users/michellemendez/Desktop/MICHELLE-WS/DataAnalysis/Projects_/Spotify Analysis/"
+    path = "Spotify Analysis/"
     filename = "data_playlist.csv"
   # Replace with your data filename
 

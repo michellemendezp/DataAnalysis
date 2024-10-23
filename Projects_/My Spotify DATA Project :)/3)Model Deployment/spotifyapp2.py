@@ -6,8 +6,8 @@ import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 
 # Spotify API credentials
-SPOTIPY_CLIENT_ID = "7e80b7cde3da4fa89c6940a7e21a532d"
-SPOTIPY_CLIENT_SECRET = "5fb3a8f0139346f19d8b99393386c201"
+SPOTIPY_CLIENT_ID = "your spotify client id"
+SPOTIPY_CLIENT_SECRET = "your spotify client secret"
 SPOTIPY_REDIRECT_URI = "http://localhost/"
 
 # Initialize Spotify client
@@ -20,7 +20,7 @@ sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(
 @st.cache_resource
 def load_model():
     try:
-        model = joblib.load('/Users/michellemendez/Desktop/MICHELLE-WS/DataAnalysis/Projects_/Spotify Analysis/logistic_regression_model.pkl')
+        model = joblib.load('logistic_regression_model.pkl')
         st.write("Model loaded successfully.")
     except Exception as e:
         st.write(f"Error loading model: {e}")
@@ -30,7 +30,7 @@ def load_model():
 @st.cache_resource
 def load_scaler():
     try:
-        scaler = joblib.load('/Users/michellemendez/Desktop/MICHELLE-WS/DataAnalysis/Projects_/Spotify Analysis/scaler.pkl')
+        scaler = joblib.load('scaler.pkl')
         st.write("Scaler loaded successfully.")
     except Exception as e:
         st.write(f"Error loading scaler: {e}")
