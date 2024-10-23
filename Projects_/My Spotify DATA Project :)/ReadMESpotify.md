@@ -11,23 +11,29 @@ This project involves analyzing Spotify data using a machine learning model to p
 
 1.  **Data Collection**
 
+In this part we are going to analyze your Spotify listening history, you can request your data directly from Spotify. Spotify provides users with the option to download their personal data, including detailed listening history and user interaction, later for audio features we can extract them with the spotify api
+
+For more information go into the Spotify Page 
+
+[Get your data](https://support.spotify.com/us/article/data-rights-and-privacy-settings/)
+
 
 
 3.  **Data Analysis & Model Creation (Jupyter Notebooks)**
 
--  `AnalysisSpotify.ipynb`: Exploratory Data Analysis (EDA) on Spotify dataset, including feature engineering and visualization. Data preprocessing and training a machine learning model for predicting song preferences.
+`AnalysisSpotify.ipynb`: Exploratory Data Analysis (EDA) on Spotify dataset, including feature engineering and visualization. Data preprocessing and training a machine learning model for predicting song preferences.
 
-- Transformation methods used: `StandardScaler`, `PowerTransformer` (Yeo-Johnson method).
+Transformation methods used: `StandardScaler`, `PowerTransformer` (Yeo-Johnson method).
 
   
 
 2.  **ETL, Train, and Test**
 
--  `ETLSpotify.py`: Extract, transform, and load (ETL) script to process Spotify data.
+ `ETLSpotify.py`: Extract, transform, and load (ETL) script to process Spotify data.
 
-- Extracts data using the Spotify API and stores it in a local database.
+Extracts data using the Spotify API and stores it in a local database.
 
-- Applies transformations to prepare the data for training.
+Applies transformations to prepare the data for training.
 
 -  `train.py`: Script to train the model using the processed data.
 
@@ -37,11 +43,10 @@ This project involves analyzing Spotify data using a machine learning model to p
 
 3.  **API Integration and Deployment with Streamlit**
 
--  `Spotifyapp.py`: Streamlit app that uses the Spotify API to provide an interactive user interface.
+  `Spotifyapp2.py`: Streamlit app that uses the Spotify API to provide an interactive user interface.
 
-- Users can input their Spotify data and receive personalized music recommendations based on their preferences.
-
-- Adjusts the prediction threshold to 0.4 for more controlled sensitivity in song classification.
+Users can input their Spotify data and receive personalized music recommendations based on their preferences.
+Adjusts the prediction threshold to 0.4 for more controlled sensitivity in song classification.
 
   
 
@@ -69,15 +74,14 @@ pip install pandas numpy scikit-learn streamlit requests
 
 1.  **Create a Spotify Developer Account**
 
-- Go to [Spotify Developer Dashboard](https://developer.spotify.com/dashboard) and log in with your Spotify account.
-
-- Click on "Create an App" to generate a new app.
+Go to [Spotify Developer Dashboard](https://developer.spotify.com/dashboard) and log in with your Spotify account.
+Click on "Create an App" to generate a new app.
 
   
 
 2.  **Obtain Spotify API Credentials**
 
-- After creating the app, go to the "Settings" of your app.
+ After creating the app, go to the "Settings" of your app.
 
 - Note down the `Client ID` and `Client Secret`.
 
@@ -110,28 +114,28 @@ SPOTIFY_REDIRECT_URI=http://localhost:8888/callback
 
 2.  **Run the ETL Script**
     
-    Extract and transform Spotify data using:
+Extract and transform Spotify data using:
 
         `SpotifyETL.py` 
         
 3.  **Train the Model**
     
-   Train the machine learning model using:
+Train the machine learning model using:
         
         `python train.py` 
         
 4.  **Test the Model**
     
-   Evaluate model performance on test data:
+ Evaluate model performance on test data:
         
         `python test.py` 
         
 5.  **Run the Streamlit App**
     
-     Launch the Streamlit app to use the Spotify API and interact with the model:
+ Launch the Streamlit app to use the Spotify API and interact with the model:
 
         
-        `streamlit run spotifyapp.py` 
+        `streamlit run spotifyapp2.py` 
         
-    -   Open  `http://localhost:8501`  in your browser to access the app.
-    -
+ Open  `http://localhost:8501`  in your browser to access the app.
+   
