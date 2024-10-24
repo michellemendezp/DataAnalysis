@@ -21,20 +21,21 @@ This folder contains essential cheatsheets that will guide you through common da
 
 This folder showcases various data analysis and machine learning projects:
 
--   **[Linear Regression - Security Incident](https://github.com/michellemendezp/DataAnalysis/blob/main/Projects_/LinearRegression-SecurityIncident.ipynb)**  
-    This project explores the use of linear regression in analyzing security incident data, using historical data to predict future trends and incident severity.
-    
-    
--   **[Data Treatment](https://github.com/michellemendezp/DataAnalysis/blob/main/Projects_/NSL-KDD_Project.ipynb)**  
-    In this project, we prepare, split, and visualize the NSL-KDD dataset, applying Random Forest and K-Neighbors algorithms to classify network intrusion activities.
-    
--   **[Amazon Sales Project](https://github.com/michellemendezp/DataAnalysis/blob/main/Projects_/AmazonSales_Project.ipynb)**  
-    A project focused on cleaning and preparing raw Amazon sales data from India, with insights derived through data visualization.
-    
 -   **[MYSpotifyModel](Projects_/MySpotifyDATAProject/ReadMESpotify.md)**  
     This project uses machine learning to predict track likability from Spotify data, analyzing features of songs to determine if they are liked or not.
     In this project I will also explore my own Spotify data, applying requests with the Spotify for developers API.
     Try this model: https://dataanalysis-guuwecgatfdtwisanq4tla.streamlit.app/
+
+-   **[Linear Regression - Security Incident](Projects_/LinearRegression-SecurityIncident.ipynb)**  
+    This project explores the use of linear regression in analyzing security incident data, using historical data to predict future trends and incident severity.
+    
+    
+-   **[Data Treatment](Projects_/DataTreatment)**  
+    In this project, we prepare, split, and visualize the NSL-KDD dataset, applying Random Forest and K-Neighbors algorithms to classify network intrusion activities.
+    
+-   **[Amazon Sales Project](Projects_/AmazonSales_Project/DataCleaning&Analisis_AmazonMarketplace.ipynb)**  
+    A project focused on cleaning and preparing raw Amazon sales data from India, with insights derived through data visualization.
+    
 
 ## Prerequisites
 
