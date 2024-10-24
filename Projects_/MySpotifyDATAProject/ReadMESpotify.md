@@ -1,5 +1,6 @@
 #  Spotify Data Analysis and Deployment
 
+Link to the model deployment: https://dataanalysis-guuwecgatfdtwisanq4tla.streamlit.app/
 
 
 ##  Project Overview
