@@ -20,7 +20,7 @@ sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(
 @st.cache_resource
 def load_model():
     try:
-        model = joblib.load('/workspaces/DataAnalysis/Projects_/MySpotifyDATAProject/3)Model Deployment/logistic_regression_model.pkl')
+        model = joblib.load('Projects_/MySpotifyDATAProject/3_ModelDeployment/logistic_regression_model.pkl')
         st.write("Model loaded successfully.")
     except Exception as e:
         st.write(f"Error loading model: {e}")
@@ -30,7 +30,7 @@ def load_model():
 @st.cache_resource
 def load_scaler():
     try:
-        scaler = joblib.load('/workspaces/DataAnalysis/Projects_/MySpotifyDATAProject/3)Model Deployment/scaler.pkl')
+        scaler = joblib.load('Projects_/MySpotifyDATAProject/3_ModelDeployment/scaler.pkl')
         st.write("Scaler loaded successfully.")
     except Exception as e:
         st.write(f"Error loading scaler: {e}")
