@@ -6,8 +6,8 @@ import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 
 # Spotify API credentials
-SPOTIPY_CLIENT_ID = "your spotify client id"
-SPOTIPY_CLIENT_SECRET = "your spotify client secret"
+client_id = st.secrets["SPOTIFY_CLIENT_ID"]
+client_secret = st.secrets["SPOTIFY_CLIENT_SECRET"]
 SPOTIPY_REDIRECT_URI = "http://localhost/"
 
 # Initialize Spotify client
