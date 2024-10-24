@@ -8,7 +8,7 @@ from spotipy.oauth2 import SpotifyClientCredentials
 # Spotify API credentials
 client_id = st.secrets["SPOTIFY_CLIENT_ID"]
 client_secret = st.secrets["SPOTIFY_CLIENT_SECRET"]
-SPOTIPY_REDIRECT_URI = "http://localhost/"
+SPOTIPY_REDIRECT_URI = "https://obscure-space-winner-4p4v5p599j9h7v77-8501.app.github.dev/"
 
 # Initialize Spotify client
 sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(
@@ -20,7 +20,7 @@ sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(
 @st.cache_resource
 def load_model():
     try:
-        model = joblib.load('logistic_regression_model.pkl')
+        model = joblib.load('/workspaces/DataAnalysis/Projects_/MySpotifyDATAProject/3)Model Deployment/logistic_regression_model.pkl')
         st.write("Model loaded successfully.")
     except Exception as e:
         st.write(f"Error loading model: {e}")
@@ -30,7 +30,7 @@ def load_model():
 @st.cache_resource
 def load_scaler():
     try:
-        scaler = joblib.load('scaler.pkl')
+        scaler = joblib.load('/workspaces/DataAnalysis/Projects_/MySpotifyDATAProject/3)Model Deployment/scaler.pkl')
         st.write("Scaler loaded successfully.")
     except Exception as e:
         st.write(f"Error loading scaler: {e}")
@@ -67,11 +67,11 @@ def get_song_features(song_id):
     }
 
 # Streamlit app layout
-st.title("Spotify Track Likeability Prediction")
-st.markdown("### Search for a track to predict if it will be liked:")
+st.title("Will Michelle like this track?😌")
+st.markdown("### Search for a track to predict if she will like it😛:")
 
 # User inputs Spotify track URL or search query
-track_query = st.text_input("Enter a track name or Spotify track URL:")
+track_query = st.text_input("Enter the song name 😜:")
 if track_query:
     # Search for the track
     results = sp.search(q=track_query, type='track', limit=1)
