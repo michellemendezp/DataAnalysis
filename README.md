@@ -31,7 +31,7 @@ This folder showcases various data analysis and machine learning projects:
 -   **[Amazon Sales Project](https://github.com/michellemendezp/DataAnalysis/blob/main/Projects_/AmazonSales_Project.ipynb)**  
     A project focused on cleaning and preparing raw Amazon sales data from India, with insights derived through data visualization.
     
--   **[MYSpotifyModel](Projects_/MySpotifyDATAProject)**  
+-   **[MYSpotifyModel](Projects_/MySpotifyDATAProject/ReadMESpotify.md)**  
     This project uses machine learning to predict track likability from Spotify data, analyzing features of songs to determine if they are liked or not.
     In this project I will also explore my own Spotify data, applying requests with the Spotify for developers API.
     Try this model: https://dataanalysis-guuwecgatfdtwisanq4tla.streamlit.app/
