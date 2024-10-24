@@ -8,12 +8,12 @@ from spotipy.oauth2 import SpotifyClientCredentials
 # Spotify API credentials
 client_id = st.secrets["SPOTIFY_CLIENT_ID"]
 client_secret = st.secrets["SPOTIFY_CLIENT_SECRET"]
-SPOTIPY_REDIRECT_URI = "https://obscure-space-winner-4p4v5p599j9h7v77-8501.app.github.dev/"
+SPOTIPY_REDIRECT_URI = "https://wouldmichellelikethis.streamlit.app/"
 
 # Initialize Spotify client
 sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(
-    client_id=SPOTIPY_CLIENT_ID,
-    client_secret=SPOTIPY_CLIENT_SECRET
+    client_id=client_id,
+    client_secret=client_secret
 ))
 
 # Load the trained model and scaler using the updated caching method
